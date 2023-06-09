@@ -17,6 +17,78 @@ a,
     text-rendering: optimizeLegibility;
 }
 
+.python-code {
+    border: 1px solid #dcdcdc;
+    display: block;
+    background-color: #efefef;
+    color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.python-code .comment {
+    color: #57a64a;
+}
+
+.sidenav {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    letter-spacing: -0.03px;
+    margin-top: 370%;
+    position: sticky;
+    top: 21%;
+    padding: 1em;
+    width: 200px;
+    height: 50vh;
+    background-color: #f3f3f3;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    margin-left: 2%;
+    overflow: auto;
+}
+
+.sidenav h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.sidenav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav ul li a {
+    margin-top: 0 !important;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5em 0;
+}
+
+.sidenav ul li a:hover {
+    color: #007BFF;
+}
+
+.sidenav ul ul {
+    margin-left: 15px;
+}
+
+.sidenav ul li a{
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: #007BFF;
+}
+
 h1 {
     font-family: "Playfair Display", serif;
     font-size: 48px;
@@ -25,7 +97,6 @@ h1 {
 }
 
 li{
-    margin-top: 21px;
     font-family: "Lora";
     font-size: 21px;
     letter-spacing: -0.03px;
@@ -252,6 +323,9 @@ code {
 }
 
 @media screen and (max-width: 1072px) {
+    .sidenav {
+        display: none;
+    }
     .container {
         -ms-grid-columns: auto 740px auto;
         grid-template-columns: auto 740px auto;
@@ -276,6 +350,10 @@ code {
 }
 
 @media screen and (max-width: 740px) {
+    .sidenav {
+        display: none;
+    }
+
     .container {
         -ms-grid-rows: auto auto 150px;
         grid-template-rows: auto auto 150px;

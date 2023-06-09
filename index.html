@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <title>IA Générative</title>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <div class="container">
+    <aside class="sidenav">
+        <ul>
+            <li><a href="#Intelligence_Artificielle">Intelligence Artificielle</a></li>
+            <li><a href="#Familles_algorithme">Familles d'algorithme</a></li>
+            <li><a href="#Pre-traitement">Pré-traitement de la donnée</a></li>
+            <li><a href="#Machine_Learning">Machine Learning</a></li>
+            <li><a href="#Reseau_neurones">Réseau de neurones</a></li>
+            <li><a href="#Regularisation">Régularisation</a></li>
+            <li><a href="#non_linéarite">La non linéarité</a></li>
+            <li><a href="#disparition_gradient">La disparition du gradient</a></li>
+            <li><a href="#Deep_Learning">Deep Learning</a></li>
+            <li><a href="#CNN">Réseau de neurones convolutif (CNN)</a></li>
+            <li><a href="#VAE">VAE (Variational Auto Encoder)</a></li>
+            <li><a href="#gen_img">L’IA pour générer des images</a></li>
+            <li><a href="#GAN">GAN (Generative Adversarial Networks)</a></li>
+            <li><a href="#Cycle_GAN">Cycle GAN</a></li>
+            <li><a href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </aside>
     <div class="meta">
         <div class="image"><img style="max-width: 100%;max-height: 100%;transform: scale(0.85)" src="asset/img/img0.jpeg" alt=""></div>
         <div class="info">
@@ -26,8 +44,26 @@
         </div>
     </div>
     <main class="article">
-        <h2>Intelligence Artificielle</h2>
-        <h3>Le domaine de l'IA</h3>
+        <h2 id="Sommaire">Sommaire</h2>
+        <ul style="text-decoration: none;">
+            <li><a href="#Intelligence_Artificielle">Intelligence Artificielle</a></li>
+            <li><a href="#Familles_algorithme">Familles d'algorithme</a></li>
+            <li><a href="#Pre-traitement">Pré-traitement de la donnée</a></li>
+            <li><a href="#Machine_Learning">Machine Learning</a></li>
+            <li><a href="#Reseau_neurones">Réseau de neurones</a></li>
+            <li><a href="#Regularisation">Régularisation</a></li>
+            <li><a href="#non_linéarite">La non linéarité</a></li>
+            <li><a href="#disparition_gradient">La disparition du gradient</a></li>
+            <li><a href="#Deep_Learning">Deep Learning</a></li>
+            <li><a href="#CNN">Réseau de neurones convolutif (CNN)</a></li>
+            <li><a href="#VAE">VAE (Variational Auto Encoder)</a></li>
+            <li><a href="#gen_img">L’IA pour générer des images</a></li>
+            <li><a href="#GAN">GAN (Generative Adversarial Networks)</a></li>
+            <li><a href="#Cycle_GAN">Cycle GAN</a></li>
+            <li><a href="#Conclusion">Conclusion</a></li>
+        </ul>
+        <h2 id="Intelligence_Artificielle">Intelligence Artificielle</h2>
+        <h3 id="domaine_IA">Le domaine de l'IA</h3>
         <p><span class="first-letter">A</span>vant de rentrer dans le vif du sujet et de parler d’intelligence
             artificielle générative il est nécessaire d’expliquer ce qu'est l'intelligence artificielle. Une
             intelligence artificielle (ou IA) est un domaine scientifique qui étudie la reproduction du comportement
@@ -40,7 +76,7 @@
             enjeux de l'IA, il est important de se familiariser avec son histoire, ses concepts de base et ses
             différentes applications.
         </p>
-        <h3>Histoire</h3>
+        <h3 id="Histoire">Histoire</h3>
         <p>La notion d’intelligence artificielle existe depuis les années 50, notamment grâce au livre d’Alan Turing «
             Computing Machinery and Intelligence » dans lequel il présente le fameux test de Turing. Test qui spécifie
             que si un sujet humain interagit à l'aveugle avec un autre humain et un ordinateur . Si le sujet n'est pas
@@ -59,7 +95,7 @@
         <img style="width: 80%"
              src="asset/img/Relations-entre-les-ensembles-intelligence-artificielle-apprentissage-automatique.png"
              alt="">
-        <h3>Cas d'usages</h3>
+        <h3 id="Cas_usages">Cas d'usages</h3>
         <p>Le premier cas d’usage qui vient à l’esprit du grand public quand on parle d’intelligence artificielle est
             bien, évidemment les assistants à reconnaissance vocale. Alexa, Siri ou Google Assistant aident les humains
             dans de divers domaines. De la planification de rendez-vous dans un calendrier en passant par la domotique,
@@ -88,7 +124,7 @@
             Depuis toutes les grandes entreprises s'y sont essayés, Apple, Google ou encore Microsoft. Chaque entreprise
             alloue de très grosses ressources pour créer, entrainer et maintenir leurs intelligences artificielles. Ses
             entreprises utilisent diverses techniques pour développer et améliorer leur intelligence artificielle.</p>
-        <h2>Familles d'algorithme</h2>
+        <h2 id="Familles_algorithme">Familles d'algorithme</h2>
         <h3>Trois grandes familles</h3>
         <p><span class="first-letter">D</span>ans les sous-domaines dont on a parlé au chapitre précédent, à savoir, le
             Machine learning et le Deep learning. Nous retrouvons trois catégories d'algorithmes, dit supervisé
@@ -149,7 +185,7 @@
             <br><br>
             Il est utilisé lorsque les données étiquetées sont insuffisantes ou peu pertinentes et peut être constituer
             d'un mélange de techniques supervisées et non supervisées</p>
-        <h2>Pré-traitement de la donnée</h2>
+        <h2 id="Pre-traitement">Pré-traitement de la donnée</h2>
         <h3>L'importance de la donnée</h3>
         <p><span class="first-letter">P</span>our avoir un bon modèle il nous faut de bonnes données et pour cela on
             effectue généralement un pré-traitement également connu sous le nom de pre-processing. Cette étape est
@@ -183,7 +219,7 @@
             Ce temps passé au pré-traitement des données est également bénéfique car il nous permet à nous, humain, de
             comprendre les enjeux et de pouvoir ainsi plus facilement solutionner les problèmes qui pourraient survenir.
         </p>
-        <h2>Machine Learning</h2>
+        <h2 id="Machine_Learning">Machine Learning</h2>
         <p><span class="first-letter">L</span>e machine learning ou apprentissage automatique en français est une
             sous-catégorie de l’intelligence artificielle. L’objectif étant de trouver un certain nombre de « pattern »,
             autrement dit un élément récurrent dans un ensemble de données, avec des modèles prévus à cet effet.
@@ -218,7 +254,7 @@
             internes à l'entraînement de l’algorithme appelées hyperparamètres. On comparera les résultats obtenus avec
             d’anciens résultats pour qu’on puisse obtenir un modèle qui répond à une problématique donnée.
         </p>
-        <h2>Réseau de neurones</h2>
+        <h2 id="Reseau_neurones">Réseau de neurones</h2>
         <h3>La boîte noire</h3>
         <p><span class="first-letter">Q</span>uand on parle d’Intelligence Artificielle, beaucoup pensent à cette
             fameuse boîte noire et aux réseaux de neurones ; l’un des modèles les plus répandus. Ce type d’algorithme
@@ -460,7 +496,7 @@
                 être confondues à celles proches de 0, contrairement à la fonction sigmoïde avec son champ d’action
                 entre 0 et 1.</p>
         </div>
-        <h2>Régularisation</h2>
+        <h2 id="Regularisation">Régularisation</h2>
         <p><span class="first-letter">L</span>e sur-apprentissage (overfitting) est chose courante lors de
             l’apprentissage de modèle de machine learning.
             Pour restreindre ce phénomène, il existe différentes méthodes dites de régularisation (regularization).
@@ -498,7 +534,7 @@
             <br><br>
             Mathématiquement, la L2 cherche à ce que la somme des carrées des paramètres soit la plus petite possible,
             cette méthode pousse le modèle à équilibrer son entraînement. </p>
-        <h2>La non linéarité</h2>
+        <h2 id="non_linéarite">La non linéarité</h2>
         <h3>Modèle linéaire</h3>
         <p><span class="first-letter">E</span>n machine learning, on retrouve ce qu’on appelle des modèles linéaires,
             ces modèles ont pour but de modéliser une relation par une droite.
@@ -545,7 +581,7 @@
             <br><br>
             Pour toute entrée négative, la sortie sera 0. Et pour toute entrée positive la sortie sera x, elle dépendra
             d’elle-même. On n’observe plus aucune linéarité.</p>
-        <h2>La disparition du gradient</h2>
+        <h2 id="disparition_gradient">La disparition du gradient</h2>
         <h3>Vanishing gradient problem</h3>
         <p><span class="first-letter">L</span>orsque l’on utilise un réseau de neurones, on a recours à un algorithme
             d’optimisation afin d’optimiser les paramètres de notre modèle.
@@ -598,7 +634,7 @@
         <img style="width: 60%; display: block; margin-left: auto; margin-right: auto;"
              src="asset/img/img20.png"
              alt="">
-        <h2>Deep Learning</h2>
+        <h2 id="Deep_Learning">Deep Learning</h2>
         <p><span class="first-letter">L</span>'apprentissage en profondeur (deep learning) est une sous-catégorie de
             l’intelligence artificielle et même
             une sous-catégorie du machine learning lui-même. Son objectif est d’être capable d'imiter le fonctionnement
@@ -619,7 +655,7 @@
             <br><br>
             Son usage est parfois quotidien dans de nombreux domaines et il est clair qu'il jouera très probablement un
             rôle important dans le futur.</p>
-        <h2>Réseau de neurones convolutif (CNN)</h2>
+        <h2 id="CNN">Réseau de neurones convolutif (CNN)</h2>
         <h3>Les limites des réseaux de neurones</h3>
         <p><span class="first-letter">U</span>ne fois les réseaux de neurones assimilés, on pourrait être tenté de les
             utiliser systématiquement, pour une
@@ -736,36 +772,36 @@
              src="asset/img/img24.jpeg"
              alt="">
         <br>
-        <code>
+        <code class="python-code">
             import numpy as np<br>
             import scipy.signal<br>
             from PIL import Image<br>
-            import matplotlib.pyplot as plt
-            <br><br>
-            img_path = "/content/esgi.jpg"
-            <br><br>
-            # La conversion 'L' nous permet de transformer l'image en niveaux de gris<br>
-            # pour ne plus utiliser qu'un seul canal au lieu des canaux RGB<br>
-            img_raw = Image.open(img_path).convert('L')
-            <br><br>
-            # On convertit notre image en matrice<br>
+            import matplotlib.pyplot as plt<br>
+            <br>
+            img_path = "/content/esgi.jpg"<br>
+            <br>
+            <span class="comment"># La conversion 'L' nous permet de transformer l'image en niveaux de gris</span>
+            <span class="comment">pour utiliser qu'un seul canal au lieu des canaux RGB</span><br>
+            img_raw = Image.open(img_path).convert('L')<br>
+            <br>
+            <span class="comment"># On convertit notre image en matrice</span><br>
             img_matrix = np.array(img_raw)<br>
-            plt.imshow(img_matrix, cmap='gray')<br>
-            Maintenant créons un kernel de détection d’angle (edge detection).
-            <br><br>
+            plt.imshow(img_matrix, cmap='gray')<br><br>
+            <span class="comment">#Maintenant créons un kernel de détection d’angle (edge detection).</span><br>
             edge_detection_kernel = -np.ones((3,3))<br>
             edge_detection_kernel[1, 1] = 8<br>
-            edge_detection_kernel<br>
-            Notre kernel ressemblera à ça :<br>
+            edge_detection_kernel<br><br>
+            <span class="comment">#Notre kernel ressemblera à ça :</span><br>
             [[-1, -1, -1],<br>
             [-1, 8, -1],<br>
-            [-1, -1, -1]]
-            <br><br>
-            Appliquons le maintenant à notre image.
-            <br><br>
+            [-1, -1, -1]]<br>
+            <br>
+            <span class="comment">#Appliquons le maintenant à notre image.</span><br>
             img_processed = scipy.signal.convolve2d(img_matrix, edge_detection_kernel)<br>
             img_processed = np.clip(img_processed, 0, 255)<br>
-            plt.imshow(img_processed, cmap='gray')</code><br><br>
+            plt.imshow(img_processed, cmap='gray')<br>
+        </code>
+        <br><br>
         <img style="width: 70%; display: block; margin-left: auto; margin-right: auto;"
              src="asset/img/img25.png"
              alt="">
@@ -882,7 +918,7 @@
             les poids de la dernière couche fully connected, figer les poids de toutes les autres couches et re
             entraîner le modèle sur notre propre jeux de données. En faisant ainsi on garde toute la connaissance apprit
             par le modèle et on vient lui demander d’ajuster ses connaissances à notre problématique.</p>
-        <h2>L’IA pour générer des images</h2>
+        <h2 id="gen_img">L’IA pour générer des images</h2>
         <h3>Auto Encoder</h3>
         <p><span class="first-letter">L</span>e modèle prend un input et apprend à compresser et encoder cette donnée en
             un « code ». Un décodeur
@@ -945,7 +981,7 @@
             Les couches de pooling de l’encodeur, permettant de réduire la dimension de nos caractéristiques sont
             remplacées du côté du décodeur par des couches de upsampling permettant d’augmenter la dimension de ces
             dernières.</p>
-        <h2>VAE (Variational Auto Encoder)</h2>
+        <h2 id="VAE">VAE (Variational Auto Encoder)</h2>
         <p><span class="first-letter">S</span>on nom est assez explicite, le variational autoencoder est une évolution au modèle autoencoder.
             Contrairement à son prédécesseur qui avaient de très bonnes capacités pour tenter de reconstruire, altérer
             une image, lui peut maintenant en générer de « vraies » nouvelles, chose qui n’était pas à porter de son
@@ -1025,7 +1061,7 @@
             Les VAEs sont ainsi très utiles pour une multitude de tâche, cependant, en raison de la compression des
             données en entrées, les données en sortie sont souvent floues et de moins qualités que ce dont un GAN est
             capable de produire.</p>
-        <h2>GAN (Generative Adversarial Networks)</h2>
+        <h2 id="GAN">GAN (Generative Adversarial Networks)</h2>
         <p><span class="first-letter">L</span>es réseaux adversariels génératifs (GAN) sont un type de modèle de réseau de neurones qui peut apprendre à
             générer de nouvelles données qui ressemblent à des exemples de données du dataset. Ils ont été proposés pour
             la première fois en 2014 par Ian Goodfellow.</p>
@@ -1179,7 +1215,7 @@
             important de générer des données qui sont variées ou qui ont des caractéristiques qui ne sont pas présentes
             dans le dataset d'entraînement.</p>
         <h3>Les différentes architectures de GAN</h3>
-        <h2>Cycle GAN : Le cercle vertueux</h2>
+        <h2 id="Cycle_GAN">Cycle GAN : Le cercle vertueux</h2>
         <p><span class="first-letter">U</span>n Cycle GAN est un type de GAN qui est utilisé pour la conversion d'images entre deux domaines différents.
             Par exemple, on peut utiliser un Cycle GAN pour convertir des images de chevaux en zèbres et inversement.
             <br><br>
@@ -1231,7 +1267,7 @@
             générateur des images réelles du jeu de données. Cependant, en plus de cela, le contrôleur de style est
             formé pour optimiser la qualité de l'image générée en fonction du style désiré, en utilisant une fonction de
             loss qui mesure la ressemblance entre l'image générée et un exemple de style cible.</p>
-        <h2>Conclusion</h2>
+        <h2 id="Conclusion">Conclusion</h2>
         <p>Merci !
             <br><br>
             Ca y est, notre cours sur l'intelligence artificielle générative prend fin !
@@ -1255,9 +1291,20 @@
             <br><br>
             A bientôt.
         </p>
-
-        <!-- Il vous suffit de continuer à ajouter des éléments <p>, <h2>, <blockquote> comme indiqué dans votre modèle Pug -->
     </main>
 </div>
+<script>
+    window.onscroll = function() {
+        const sidenav = document.getElementsByClassName('sidenav')[0];
+        const summary = document.getElementById('Intelligence_Artificielle');
+        const summaryHeight = summary.offsetHeight + summary.offsetTop;
+
+        if (window.scrollY > summaryHeight-40) {
+            sidenav.style.opacity = "1";
+        } else {
+            sidenav.style.opacity = "0";
+        }
+    };
+</script>
 </body>
 </html>
