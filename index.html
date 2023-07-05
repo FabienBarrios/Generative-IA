@@ -789,16 +789,16 @@
             <span class="comment"># On convertit notre image en matrice</span><br>
             img_matrix = np.array(img_raw)<br>
             plt.imshow(img_matrix, cmap='gray')<br><br>
-            <span class="comment">#Maintenant créons un kernel de détection d’angle (edge detection).</span><br>
+            <span class="comment"># Maintenant créons un kernel de détection d’angle (edge detection).</span><br>
             edge_detection_kernel = -np.ones((3,3))<br>
             edge_detection_kernel[1, 1] = 8<br>
             edge_detection_kernel<br><br>
-            <span class="comment">#Notre kernel ressemblera à ça :</span><br>
+            <span class="comment"># Notre kernel ressemblera à ça :</span><br>
             [[-1, -1, -1],<br>
             [-1, 8, -1],<br>
             [-1, -1, -1]]<br>
             <br>
-            <span class="comment">#Appliquons le maintenant à notre image.</span><br>
+            <span class="comment"># Appliquons le maintenant à notre image.</span><br>
             img_processed = scipy.signal.convolve2d(img_matrix, edge_detection_kernel)<br>
             img_processed = np.clip(img_processed, 0, 255)<br>
             plt.imshow(img_processed, cmap='gray')<br>
